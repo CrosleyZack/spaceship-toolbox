@@ -32,7 +32,7 @@ spaceship_toolbx() {
   # Check if toolbox_prompt_info is available for execution
   spaceship::exists toolbox_prompt_info || return
 
-  local _version="$(toolbox --version)"
+  local _version="$(toolbox --version | cut -b17-)"
 
   # If not in toolbx, exit
   [[ "$(toolbox_prompt_info)" == "" ]] && return
