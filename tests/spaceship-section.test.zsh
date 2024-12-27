@@ -10,7 +10,7 @@ typeset -g SPACESHIP_ROOT="${SPACESHIP_ROOT:=/spaceship}"
 
 # Mocked tool CLI
 mocked_version="v1.0.0-mocked"
-foobar() {
+toolbox() {
   echo "$mocked_version"
 }
 
@@ -59,9 +59,9 @@ test_mocked_version() {
   # Prepare the environment
   touch $SHUNIT_TMPDIR/test.foo
 
-  local prefix="%{%B%}$SPACESHIP_FOOBAR_PREFIX%{%b%}"
-  local content="%{%B%F{$SPACESHIP_FOOBAR_COLOR}%}$SPACESHIP_FOOBAR_SYMBOL$mocked_version%{%b%f%}"
-  local suffix="%{%B%}$SPACESHIP_FOOBAR_SUFFIX%{%b%}"
+  local prefix="%{%B%}$SPACESHIP_TOOLBX_PREFIX%{%b%}"
+  local content="%{%B%F{$SPACESHIP_TOOLBX_COLOR}%}$SPACESHIP_TOOLBX_SYMBOL$mocked_version%{%b%f%}"
+  local suffix="%{%B%}$SPACESHIP_TOOLBX_SUFFIX%{%b%}"
 
   local expected="$prefix$content$suffix"
   local actual="$(spaceship::testkit::render_prompt)"
