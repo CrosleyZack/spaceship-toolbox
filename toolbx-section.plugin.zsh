@@ -23,7 +23,7 @@ SPACESHIP_TOOLBX_COLOR="${SPACESHIP_TOOLBX_COLOR="#613583"}"
 # spaceship_ prefix before section's name is required!
 # Otherwise this section won't be loaded.
 spaceship_toolbx() {
-  # If SPACESHIP__SHOW is false, don't show foobar section
+  # If SPACESHIP_TOOLBX_SHOW is false, don't show toolbox section
   [[ $SPACESHIP_TOOLBX_SHOW == false ]] && return
 
   # Check if toolbox is available for execution

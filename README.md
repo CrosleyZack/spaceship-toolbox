@@ -57,7 +57,7 @@ git clone --depth=1 https://github.com/CrosleyZack/spaceship-toolbox.git "$HOME/
 For initializing prompt system add this to your `.zshrc`:
 
 ```zsh title=".zshrc"
-source "~/.zsh/spaceship-toolbx/spaceship-toolbx.plugin.zsh"
+source "$HOME/.zsh/spaceship-toolbx/toolbx-section.plugin.zsh"
 ```
 
 ## Usage
